@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-midnight-950: #020617;
+  --color-midnight-900: #0f172a;
+  --color-midnight-800: #1e293b;
+
+  --color-obsidian: #050505;
+  --color-obsidian-glass: rgba(5, 5, 5, 0.7);
+
+  --color-aurora-cyan: #2DD4BF;
+  --color-aurora-purple: #A78BFA;
+  --color-aurora-pink: #F472B6;
+  --color-aurora-gold: #FCD34D;
+
+  --font-sans: 'Pretendard', 'Inter', sans-serif;
+
+  --background-image-aurora-gradient: linear-gradient(to right bottom, #2DD4BF, #A78BFA, #F472B6);
+  --background-image-aurora-mesh: radial-gradient(at 0% 0%, rgba(45, 212, 191, 0.15) 0px, transparent 50%), radial-gradient(at 100% 0%, rgba(167, 139, 250, 0.15) 0px, transparent 50%), radial-gradient(at 100% 100%, rgba(244, 114, 182, 0.15) 0px, transparent 50%);
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-slow: pulse-glow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    opacity: 1;
+    filter: blur(20px);
+  }
+
+  50% {
+    opacity: 0.7;
+    filter: blur(30px);
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Use standard classes or CSS vars */
+    background-color: var(--color-midnight-950);
+    color: white;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background-color: var(--color-obsidian-glass);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .text-gradient-aurora {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, var(--color-aurora-cyan), var(--color-aurora-purple), var(--color-aurora-pink));
+    display: inline-block;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 20px rgba(167, 139, 250, 0.5);
+  }
+}
