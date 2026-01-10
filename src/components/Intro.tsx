@@ -6,20 +6,7 @@ export default function Intro() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-    const reasons = [
-        {
-            icon: <Search className="w-8 h-8 text-aurora-cyan" />,
-            text: "광고는 많은데 가격은 안 나와있다"
-        },
-        {
-            icon: <BadgeHelp className="w-8 h-8 text-aurora-purple" />,
-            text: "정확한 주대와 진행 방식을 모른다"
-        },
-        {
-            icon: <AlertCircle className="w-8 h-8 text-aurora-pink" />,
-            text: "생각보다 많이 나올까봐 걱정된다"
-        }
-    ];
+
 
     return (
         <section id="intro" className="py-24 bg-midnight-950 relative overflow-hidden">
@@ -40,23 +27,30 @@ export default function Intro() {
                         <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
                             <p>
                                 강남에서 가라오케나 하이퍼블릭을 찾는 분들 대부분이<br />
-                                처음부터 걱정을 안고 연락을 주십니다.
+                                처음부터 이런 생각을 합니다.
                             </p>
                             <ul className="space-y-4 my-8">
-                                {reasons.map((item, idx) => (
-                                    <li key={idx} className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/5 backdrop-blur-sm">
-                                        {item.icon}
-                                        <span className="text-gray-200 font-medium">{item.text}</span>
-                                    </li>
-                                ))}
+                                <li className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/5 backdrop-blur-sm">
+                                    <Search className="w-8 h-8 text-aurora-cyan flex-shrink-0" />
+                                    <span className="text-gray-200 font-medium">"광고는 많은데, 막상 가격은 안 나와 있고"</span>
+                                </li>
+                                <li className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/5 backdrop-blur-sm">
+                                    <BadgeHelp className="w-8 h-8 text-aurora-purple flex-shrink-0" />
+                                    <span className="text-gray-200 font-medium">"주대 얼마인지, 어떻게 진행되는지 정확히 안 알려준다"</span>
+                                </li>
+                                <li className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/5 backdrop-blur-sm">
+                                    <AlertCircle className="w-8 h-8 text-aurora-pink flex-shrink-0" />
+                                    <span className="text-gray-200 font-medium">"괜히 갔다가 생각보다 많이 나오면 어쩌지"</span>
+                                </li>
                             </ul>
                             <p>
-                                <strong className="text-white">강남 달토</strong>는 이런 걱정을 줄이기 위해<br />
+                                <strong className="text-white">강남 달토 (달리는토끼)</strong>는 이런 걱정을 줄이기 위해<br />
                                 운영 방식부터 다르게 가져가고 있습니다.
                             </p>
                             <p>
-                                "무조건 좋다", "무조건 싸다" 같은 말은 하지 않습니다.<br />
-                                대신 지금 상황과 정확한 견적, 그리고 솔직한 조언을 드립니다.
+                                "무조건 좋다", "무조건 싸다" 같은 말 안 합니다.<br />
+                                대신 <strong>지금 상황이 어떤지, 얼마 정도 생각하셔야 하는지</strong>,<br />
+                                그리고 <strong>이용해도 괜찮을지 아닐지</strong>를 먼저 말씀드립니다.
                             </p>
                         </div>
                     </motion.div>
