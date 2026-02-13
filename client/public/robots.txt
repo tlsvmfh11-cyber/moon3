@@ -1,4 +1,5 @@
-# robots.txt for 강남 달토
+# robots.txt for 강남 달토 달리는토끼
+# https://gangnamdaltoshs.com/
 
 User-agent: *
 Allow: /
@@ -6,10 +7,21 @@ Allow: /
 # Sitemap location
 Sitemap: https://gangnamdaltoshs.com/sitemap.xml
 
-# Disallow admin and private paths
+# Disallow private paths
 Disallow: /api/
-Disallow: /_next/
 Disallow: /private/
 
-# Crawl-delay for polite crawling
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Naver
+User-agent: Yeti
+Allow: /
+Crawl-delay: 1
+
+# Daum
+User-agent: Daum
+Allow: /
 Crawl-delay: 1

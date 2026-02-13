@@ -5,6 +5,8 @@ import System from '@/components/System';
 import Pricing from '@/components/Pricing';
 import Gallery from '@/components/Gallery';
 import Reviews from '@/components/Reviews';
+import FAQ from '@/components/FAQ';
+import Location from '@/components/Location';
 import Contact from '@/components/Contact';
 
 export default function Home() {
@@ -18,6 +20,8 @@ export default function Home() {
                 <Pricing />
                 <Gallery />
                 <Reviews />
+                <FAQ />
+                <Location />
                 <Contact />
             </main>
         </div>

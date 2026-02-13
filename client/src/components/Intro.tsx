@@ -60,7 +60,7 @@ export default function Intro() {
                     >
                         <div className="absolute inset-0 bg-gradient-to-tr from-aurora-cyan to-aurora-purple opacity-20 blur-[80px] rounded-full" />
                         <div className="relative rounded-3xl overflow-hidden border border-white/10 mb-6">
-                            <img src={introVisual} alt="Abstract Visual" className="w-full h-auto object-cover opacity-100" />
+                            <img src={introVisual} alt="강남 달토 달리는토끼 하이퍼블릭 가라오케 매장 분위기" className="w-full h-auto object-cover opacity-100" />
                             <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 to-transparent" />
                         </div>
 

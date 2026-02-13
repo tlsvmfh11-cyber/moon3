@@ -47,7 +47,7 @@ export default function Pricing() {
                             <div className="absolute inset-0 bg-gradient-to-br from-aurora-cyan/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                             <img
                                 src={pricingCrystal}
-                                alt="Clear Pricing"
+                                alt="강남 달토 달리는토끼 투명한 가격 안내 주대 정보"
                                 className="absolute -right-20 -top-20 w-[300px] h-[300px] object-contain opacity-60 pointer-events-none mix-blend-screen"
                             />
 

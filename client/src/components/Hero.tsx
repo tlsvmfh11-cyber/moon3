@@ -13,7 +13,7 @@ export default function Hero() {
     const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
     return (
-        <div ref={containerRef} className="relative min-h-[100dvh] bg-midnight-950 flex items-center justify-center overflow-hidden">
+        <div ref={containerRef} role="banner" className="relative min-h-[100dvh] bg-midnight-950 flex items-center justify-center overflow-hidden">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div
                     className="absolute inset-0 bg-cover bg-center opacity-80"
@@ -38,12 +38,12 @@ export default function Hero() {
 
                     <h1 className="text-4xl md:text-7xl font-bold tracking-tighter leading-[1.2] mb-6 text-white" data-testid="text-hero-title">
                         강남 달토 | <span className="text-transparent bg-clip-text bg-gradient-to-r from-aurora-cyan via-aurora-purple to-aurora-pink">달리는토끼</span><br />
-                        최저가 진행 가격·시스템 <span className="block md:inline mt-2 md:mt-0">솔직 안내</span>
+                        강남 하이퍼블릭 가라오케 <span className="block md:inline mt-2 md:mt-0">최저가 솔직 안내</span>
                     </h1>
 
                     <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
-                        가격·주대·이용 시스템을 숨기지 않고 있는 그대로 설명합니다.<br />
-                        현장에서 실제로 운영하는 방식 그대로, 부담 없는 하이퍼블릭
+                        강남 하이퍼블릭 가라오케 가격·주대·이용 시스템을 숨기지 않고 있는 그대로 설명합니다.<br />
+                        현장에서 실제로 운영하는 방식 그대로, 부담 없는 강남 하이퍼블릭 가라오케
                     </p>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-12">

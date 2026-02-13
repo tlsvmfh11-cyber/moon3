@@ -7,7 +7,14 @@ import gallery4 from '@/assets/gallery/gallery4.jpg';
 import gallery5 from '@/assets/gallery/gallery5.jpg';
 import gallery6 from '@/assets/gallery/gallery6.jpg';
 
-const images = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6];
+const images = [
+    { src: gallery1, alt: "강남 달토 달리는토끼 프리미엄 룸 인테리어" },
+    { src: gallery2, alt: "강남 달토 하이퍼블릭 VIP 룸 시설" },
+    { src: gallery3, alt: "달토 달리는토끼 가라오케 프라이빗 공간" },
+    { src: gallery4, alt: "강남 달토 럭셔리 분위기 인테리어" },
+    { src: gallery5, alt: "달리는토끼 강남 하이퍼블릭 매장 전경" },
+    { src: gallery6, alt: "강남 달토 편안한 분위기 프리미엄 룸" },
+];
 
 export default function Gallery() {
     return (
@@ -23,7 +30,7 @@ export default function Gallery() {
                 </div>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    {images.map((src, idx) => (
+                    {images.map((image, idx) => (
                         <motion.div
                             key={idx}
                             initial={{ opacity: 0, scale: 0.9 }}
@@ -34,8 +41,10 @@ export default function Gallery() {
                             className="relative aspect-[4/3] rounded-2xl overflow-hidden group"
                         >
                             <img
-                                src={src}
-                                alt={`강남 달토 매장 이미지 ${idx + 1}`}
+                                src={image.src}
+                                alt={image.alt}
+                                width={800}
+                                height={600}
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                 loading="lazy"
                                 data-testid={`img-gallery-${idx + 1}`}

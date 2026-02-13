@@ -20,6 +20,8 @@ export default function Navbar() {
         { name: '시스템', href: '#system' },
         { name: '주대및가격', href: '#pricing' },
         { name: '후기', href: '#reviews' },
+        { name: 'FAQ', href: '#faq' },
+        { name: '오시는길', href: '#location' },
         { name: '예약문의', href: '#contact' },
     ];
 

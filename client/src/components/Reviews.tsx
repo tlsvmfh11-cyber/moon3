@@ -3,10 +3,10 @@ import { Star, Quote } from 'lucide-react';
 
 export default function Reviews() {
     const reviews = [
-        "설명이랑 실제가 같다",
-        "혼자 와도 어색하지 않다",
-        "출근 인원이 많아서 좋았다",
-        "분위기가 부담스럽지 않다"
+        { text: "설명이랑 실제가 같다", detail: "가격도 사전 안내 그대로, 추가 비용 없어서 신뢰감" },
+        { text: "혼자 와도 어색하지 않다", detail: "1인 방문에도 분위기 잘 맞춰줘서 편했음" },
+        { text: "출근 인원이 많아서 좋았다", detail: "초이스 폭이 넓어서 만족스러운 시간" },
+        { text: "분위기가 부담스럽지 않다", detail: "처음 가는 강남 하이퍼블릭이었는데 편안했음" },
     ];
 
     return (
@@ -22,7 +22,7 @@ export default function Reviews() {
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {reviews.map((text, idx) => (
+                    {reviews.map((review, idx) => (
                         <motion.div
                             key={idx}
                             initial={{ opacity: 0, y: 20 }}
@@ -39,7 +39,10 @@ export default function Reviews() {
                                 ))}
                             </div>
                             <p className="text-lg font-medium text-white group-hover:text-aurora-cyan transition-colors" data-testid={`text-review-${idx}`}>
-                                "{text}"
+                                "{review.text}"
+                            </p>
+                            <p className="text-sm text-gray-400 mt-3">
+                                {review.detail}
                             </p>
                         </motion.div>
                     ))}
