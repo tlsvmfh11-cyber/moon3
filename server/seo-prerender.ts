@@ -52,6 +52,10 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
 <meta name="description" content="강남 달토(달리는토끼)는 강남역 하이퍼블릭 가라오케입니다. 주대 가격, 이용 시스템, 초이스 방식을 숨기지 않고 투명하게 안내합니다. 처음 방문하시는 분도 부담 없이 이용 가능합니다. 전화 010-2303-3778"/>
 <meta name="keywords" content="강남달토,달토,달리는토끼,강남 달토,강남 하이퍼블릭,강남 가라오케,달토 가격,달토 주대,달토 시스템,달토 후기,강남 퍼블릭,강남 노래방,강남 룸,하이퍼블릭 추천,강남 술자리,강남 2차,달토 예약,강남역 하이퍼블릭,강남역 가라오케,강남 달리는토끼"/>
 <link rel="canonical" href="${canonicalUrl}"/>
+<link rel="icon" href="/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<link rel="icon" type="image/png" sizes="128x128" href="/favicon.png"/>
+<link rel="apple-touch-icon" href="/favicon.png"/>
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="${canonicalUrl}"/>
