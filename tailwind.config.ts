@@ -11,7 +11,6 @@ export default {
         sm: ".1875rem", /* 3px */
       },
       colors: {
-        // Flat / base colors (regular buttons)
         background: "hsl(var(--background) / <alpha-value>)",
         foreground: "hsl(var(--foreground) / <alpha-value>)",
         border: "hsl(var(--border) / <alpha-value>)",
@@ -75,6 +74,21 @@ export default {
           foreground: "hsl(var(--sidebar-accent-foreground) / <alpha-value>)",
           border: "var(--sidebar-accent-border)"
         },
+        midnight: {
+          950: "#020617",
+          900: "#0f172a",
+          800: "#1e293b",
+        },
+        obsidian: {
+          DEFAULT: "#050505",
+          glass: "rgba(5, 5, 5, 0.7)",
+        },
+        aurora: {
+          cyan: "#2DD4BF",
+          purple: "#A78BFA",
+          pink: "#F472B6",
+          gold: "#FCD34D",
+        },
         status: {
           online: "rgb(34 197 94)",
           away: "rgb(245 158 11)",
@@ -82,8 +96,12 @@ export default {
           offline: "rgb(156 163 175)",
         },
       },
+      backgroundImage: {
+        "aurora-gradient": "linear-gradient(to right bottom, #2DD4BF, #A78BFA, #F472B6)",
+        "aurora-mesh": "radial-gradient(at 0% 0%, rgba(45, 212, 191, 0.15) 0px, transparent 50%), radial-gradient(at 100% 0%, rgba(167, 139, 250, 0.15) 0px, transparent 50%), radial-gradient(at 100% 100%, rgba(244, 114, 182, 0.15) 0px, transparent 50%)",
+      },
       fontFamily: {
-        sans: ["var(--font-sans)"],
+        sans: ["Pretendard", "Inter", "sans-serif"],
         serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],
       },

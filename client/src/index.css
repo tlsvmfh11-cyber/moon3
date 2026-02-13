@@ -170,8 +170,33 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply font-sans antialiased bg-background text-foreground;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background-color: rgba(5, 5, 5, 0.7);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .text-gradient-aurora {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #2DD4BF, #A78BFA, #F472B6);
+    display: inline-block;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 20px rgba(167, 139, 250, 0.5);
   }
 }
 
