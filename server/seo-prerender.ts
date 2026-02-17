@@ -50,7 +50,9 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>강남 달토 | 달리는토끼 - 강남 하이퍼블릭 가라오케 최저가 가격·주대·시스템 솔직 안내</title>
 <meta name="description" content="강남 달토(달리는토끼)는 강남역 하이퍼블릭 가라오케입니다. 주대 가격, 이용 시스템, 초이스 방식을 숨기지 않고 투명하게 안내합니다. 처음 방문하시는 분도 부담 없이 이용 가능합니다. 전화 010-2303-3778"/>
-<meta name="keywords" content="강남달토,달토,달리는토끼,강남 달토,강남 하이퍼블릭,강남 가라오케,달토 가격,달토 주대,달토 시스템,달토 후기,강남 퍼블릭,강남 노래방,강남 룸,하이퍼블릭 추천,강남 술자리,강남 2차,달토 예약,강남역 하이퍼블릭,강남역 가라오케,강남 달리는토끼"/>
+<meta name="title" content="강남 달토 | 달리는토끼 - 강남 하이퍼블릭 가라오케 최저가 가격·주대·시스템 솔직 안내"/>
+<meta name="keywords" content="강남달토,달토,달리는토끼,강남 달토,강남 하이퍼블릭,강남 가라오케,달토 가격,달토 주대,달토 시스템,달토 후기,강남 퍼블릭,강남 노래방,강남 룸,하이퍼블릭 추천,강남 술자리,강남 2차,달토 예약,강남역 하이퍼블릭,강남역 가라오케,강남 달리는토끼,달토 초이스,강남 하이퍼블릭 추천,강남 가라오케 추천,강남 하이퍼블릭 가격"/>
+<meta name="author" content="강남 달토 달리는토끼"/>
 <link rel="canonical" href="${canonicalUrl}"/>
 <link rel="icon" href="/favicon.ico" sizes="any"/>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
@@ -74,6 +76,7 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
 <meta property="og:locale" content="ko_KR"/>
 <meta property="og:site_name" content="강남 달토 달리는토끼"/>
 <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:url" content="${canonicalUrl}"/>
 <meta name="twitter:title" content="강남 달토 | 달리는토끼 - 강남 하이퍼블릭 가라오케 최저가 가격·주대·시스템 솔직 안내"/>
 <meta name="twitter:description" content="강남 달토(달리는토끼)는 강남역 하이퍼블릭 가라오케입니다. 주대 가격, 이용 시스템, 초이스 방식을 숨기지 않고 투명하게 안내합니다. 전화 010-2303-3778"/>
 <meta name="twitter:image" content="${canonicalUrl}og-image.png"/>
@@ -102,11 +105,6 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
           "width": 128,
           "height": 128
         }
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "${canonicalUrl}?q={search_term_string}",
-        "query-input": "required name=search_term_string"
       }
     },
     {
@@ -369,12 +367,12 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
 <article id="gallery">
 <h2>강남 달토 달리는토끼 매장 공간 미리보기</h2>
 <p>달리는토끼(달토)의 실제 매장 공간입니다. 프리미엄 인테리어와 편안한 분위기를 갖춘 강남 하이퍼블릭 가라오케입니다.</p>
-<figure><img src="/images/gallery1.jpg" alt="강남 달토 달리는토끼 매장 내부 프리미엄 룸 인테리어" width="800" height="600" loading="lazy"/></figure>
-<figure><img src="/images/gallery2.jpg" alt="강남 달토 하이퍼블릭 가라오케 VIP룸" width="800" height="600" loading="lazy"/></figure>
-<figure><img src="/images/gallery3.jpg" alt="달토 달리는토끼 프리미엄 노래방 시설" width="800" height="600" loading="lazy"/></figure>
-<figure><img src="/images/gallery4.jpg" alt="강남 달토 럭셔리 분위기 공간" width="800" height="600" loading="lazy"/></figure>
-<figure><img src="/images/gallery5.jpg" alt="달리는토끼 강남 매장 인테리어" width="800" height="600" loading="lazy"/></figure>
-<figure><img src="/images/gallery6.jpg" alt="강남 달토 편안한 분위기 룸" width="800" height="600" loading="lazy"/></figure>
+<figure><img src="${canonicalUrl}og-image.png" alt="강남 달토 달리는토끼 프리미엄 룸 인테리어" width="800" height="600" loading="lazy"/><figcaption>강남 달토 달리는토끼 매장 내부 프리미엄 룸 인테리어</figcaption></figure>
+<figure><img src="${canonicalUrl}og-image.png" alt="강남 달토 하이퍼블릭 VIP 룸 시설" width="800" height="600" loading="lazy"/><figcaption>강남 달토 하이퍼블릭 가라오케 VIP룸</figcaption></figure>
+<figure><img src="${canonicalUrl}og-image.png" alt="달토 달리는토끼 가라오케 프라이빗 공간" width="800" height="600" loading="lazy"/><figcaption>달토 달리는토끼 프리미엄 노래방 시설</figcaption></figure>
+<figure><img src="${canonicalUrl}og-image.png" alt="강남 달토 럭셔리 분위기 인테리어" width="800" height="600" loading="lazy"/><figcaption>강남 달토 럭셔리 분위기 공간</figcaption></figure>
+<figure><img src="${canonicalUrl}og-image.png" alt="달리는토끼 강남 하이퍼블릭 매장 전경" width="800" height="600" loading="lazy"/><figcaption>달리는토끼 강남 매장 인테리어</figcaption></figure>
+<figure><img src="${canonicalUrl}og-image.png" alt="강남 달토 편안한 분위기 프리미엄 룸" width="800" height="600" loading="lazy"/><figcaption>강남 달토 편안한 분위기 룸</figcaption></figure>
 </article>
 
 <article id="reviews">
@@ -466,7 +464,7 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
 </main>
 
 <footer>
-<p>&copy; 2024 강남 달토 달리는토끼 (Gangnam Dalto Running Rabbit). All rights reserved.</p>
+<p>&copy; 2025 강남 달토 달리는토끼 (Gangnam Dalto Running Rabbit). All rights reserved.</p>
 <p>강남 하이퍼블릭 가라오케 | 달토 | 달리는토끼 | 강남역 인근</p>
 </footer>
 </body>

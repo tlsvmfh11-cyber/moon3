@@ -17,7 +17,7 @@ export default function Contact() {
             <div className="container mx-auto px-6 relative z-10">
                 <div className="grid md:grid-cols-2 gap-12 lg:gap-24">
                     <div className="space-y-8">
-                        <h2 className="text-3xl font-bold text-white">달토 픽업 및 예약 안내</h2>
+                        <h3 className="text-3xl font-bold text-white">달토 픽업 및 예약 안내</h3>
 
                         <div className="bg-white/5 rounded-2xl p-8 border border-white/5 backdrop-blur-sm">
                             <div className="flex items-center gap-4 mb-6">
@@ -110,7 +110,7 @@ export default function Contact() {
                 </div>
 
                 <div className="mt-24 pt-8 border-t border-white/5 text-center text-gray-600 text-sm">
-                    <p>© 2024 Gangnam Dalto Running Rabbit. All rights reserved.</p>
+                    <p>© 2025 Gangnam Dalto Running Rabbit. All rights reserved.</p>
                 </div>
             </div>
 
