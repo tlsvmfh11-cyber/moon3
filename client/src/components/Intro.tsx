@@ -17,7 +17,7 @@ export default function Intro() {
                         transition={{ duration: 0.8 }}
                     >
                         <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight text-white">
-                            왜 이렇게 <br />
+                            강남 달토, 왜 이렇게 <br />
                             <span className="text-gradient-aurora">물어보는 분들</span>이 많을까요?
                         </h2>
 

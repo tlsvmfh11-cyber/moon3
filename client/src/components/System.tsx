@@ -38,7 +38,7 @@ export default function System() {
             <div className="container mx-auto px-6">
                 <div className="text-center mb-20">
                     <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">
-                        이용 시스템, <span className="text-gray-500">어렵지 않습니다</span>
+                        달토 이용 시스템, <span className="text-gray-500">어렵지 않습니다</span>
                     </h2>
                     <p className="text-gray-400">처음 오시는 분들도 이해하기 쉽게 구성되어 있습니다.</p>
                 </div>

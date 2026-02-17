@@ -15,7 +15,7 @@ export default function Pricing() {
                 <div className="flex flex-col md:flex-row gap-16">
                     <div className="md:w-1/2">
                         <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight text-white">
-                            가격과 주대,<br />
+                            달토 가격과 주대,<br />
                             <span className="text-gradient-aurora">숨기지 않습니다</span>
                         </h2>
                         <div className="space-y-8 text-lg text-gray-400">

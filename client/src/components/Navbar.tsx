@@ -27,13 +27,14 @@ export default function Navbar() {
 
     return (
         <nav
+            aria-label="메인 네비게이션"
             className={cn(
                 'fixed top-0 left-0 w-full z-50 transition-all duration-300',
                 scrolled ? 'bg-midnight-950/80 backdrop-blur-lg border-b border-white/5' : 'bg-transparent'
             )}
         >
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-                <a href="#" className="font-bold text-2xl tracking-tighter" data-testid="link-logo">
+                <a href="#" className="font-bold text-2xl tracking-tighter" data-testid="link-logo" aria-label="강남 달토 달리는토끼 홈">
                     <span className="text-white">DAL</span>
                     <span className="text-aurora-cyan">TO</span>
                 </a>

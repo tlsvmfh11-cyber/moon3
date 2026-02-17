@@ -14,7 +14,7 @@ export default function Reviews() {
             <div className="container mx-auto px-6 relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">
-                        다시 찾는 <span className="text-gray-500">이유</span>
+                        강남 달토, 다시 찾는 <span className="text-gray-500">이유</span>
                     </h2>
                     <p className="text-xl text-gray-400">
                         한 번 오고 끝나는 손님보다 다시 연락 주는 손님이 많습니다.

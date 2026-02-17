@@ -57,6 +57,12 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
 <link rel="icon" type="image/png" sizes="128x128" href="/favicon.png"/>
 <link rel="apple-touch-icon" href="/favicon.png"/>
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<meta name="geo.region" content="KR-11"/>
+<meta name="geo.placename" content="강남구, 서울특별시"/>
+<meta name="geo.position" content="37.5172;127.0473"/>
+<meta name="ICBM" content="37.5172, 127.0473"/>
+<link rel="alternate" hreflang="ko" href="${canonicalUrl}"/>
+<link rel="alternate" hreflang="x-default" href="${canonicalUrl}"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="${canonicalUrl}"/>
 <meta property="og:title" content="강남 달토 | 달리는토끼 - 강남 하이퍼블릭 가라오케 최저가 가격·주대·시스템 솔직 안내"/>
@@ -81,10 +87,22 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
     {
       "@type": "WebSite",
       "name": "강남 달토",
-      "alternateName": ["달리는토끼", "달토", "Gangnam Dalto", "Running Rabbit"],
+      "alternateName": ["달리는토끼", "달토", "Gangnam Dalto", "Running Rabbit", "강남달토"],
       "url": "${canonicalUrl}",
       "inLanguage": "ko",
       "description": "강남 달토(달리는토끼)는 강남역 하이퍼블릭 가라오케입니다. 주대 가격, 이용 시스템을 투명하게 안내합니다.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "강남 달토",
+        "alternateName": "달리는토끼",
+        "url": "${canonicalUrl}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "${canonicalUrl}favicon.png",
+          "width": 128,
+          "height": 128
+        }
+      },
       "potentialAction": {
         "@type": "SearchAction",
         "target": "${canonicalUrl}?q={search_term_string}",
@@ -100,6 +118,12 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
       "url": "${canonicalUrl}",
       "telephone": "+82-10-2303-3778",
       "image": "${canonicalUrl}og-image.png",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "${canonicalUrl}favicon.png",
+        "width": 128,
+        "height": 128
+      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "강남대로",
@@ -303,7 +327,7 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
 </section>
 
 <article id="intro">
-<h2>강남 달토(달리는토끼)란? - 왜 이렇게 물어보는 분들이 많을까요?</h2>
+<h2>강남 달토, 왜 이렇게 물어보는 분들이 많을까요?</h2>
 <p>강남에서 가라오케나 하이퍼블릭을 찾는 분들 대부분이 처음부터 이런 생각을 합니다.</p>
 <ul>
 <li>광고는 많은데, 막상 가격은 안 나와 있고</li>
@@ -317,7 +341,7 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
 </article>
 
 <article id="system">
-<h2>강남 달토 이용 시스템 - 5단계 안내</h2>
+<h2>달토 이용 시스템 - 5단계 안내</h2>
 <p>처음 오시는 분들도 이해하기 쉽게 구성되어 있습니다.</p>
 <ol>
 <li><h3>사전 문의</h3><p>인원, 방문 시간, 모임 성격만 알려주세요.</p></li>
@@ -330,7 +354,7 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
 </article>
 
 <article id="pricing">
-<h2>강남 달토 가격과 주대 - 숨기지 않습니다</h2>
+<h2>달토 가격과 주대 - 숨기지 않습니다</h2>
 <p>강남 달토에서는 가격, 주대, TC 구조를 투명하게 공개합니다. "싸다"는 표현은 쓰지 않습니다. 대신 이 정도면 납득할 수 있다는 기준으로 운영합니다.</p>
 <ul>
 <li>요일별/시간대별 정확한 주대 안내</li>
@@ -354,7 +378,7 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
 </article>
 
 <article id="reviews">
-<h2>강남 달토 이용 후기 - 다시 찾는 이유</h2>
+<h2>강남 달토, 다시 찾는 이유 - 이용 후기</h2>
 <p>한 번 오고 끝나는 손님보다 다시 연락 주는 손님이 많습니다.</p>
 <blockquote>"설명이랑 실제가 같다" - 별점 5/5</blockquote>
 <blockquote>"혼자 와도 어색하지 않다" - 별점 5/5</blockquote>
@@ -423,7 +447,7 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
 </article>
 
 <section id="contact">
-<h2>강남 달토 예약 문의 - 편하게 연락주세요</h2>
+<h2>강남 달토에 편하게 문의주세요 - 예약 안내</h2>
 <p>화려한 말로 포장하지 않습니다. 현장에서 실제로 하는 방식 그대로 설명하고, 손님 입장에서 불편할 수 있는 부분을 최대한 줄여드립니다.</p>
 <ul>
 <li>전화 문의: <a href="tel:01023033778">010-2303-3778</a></li>

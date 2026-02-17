@@ -46,7 +46,7 @@ export default function FAQ() {
                 <div className="text-center mb-16">
                     <span className="inline-block px-4 py-1.5 rounded-full border border-aurora-gold/30 bg-aurora-gold/10 text-aurora-gold text-xs font-semibold tracking-widest uppercase mb-6">FAQ</span>
                     <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">
-                        <span className="text-gradient-aurora">자주 묻는 질문</span>
+                        강남 달토 <span className="text-gradient-aurora">자주 묻는 질문</span>
                     </h2>
                     <p className="text-xl text-gray-400">
                         강남 달토(달리는토끼)에 대해 궁금하신 점을 모았습니다

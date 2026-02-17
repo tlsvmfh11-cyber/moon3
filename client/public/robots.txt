@@ -3,18 +3,19 @@
 
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /private/
 
 # Sitemap location
 Sitemap: https://gangnamdaltoshs.com/sitemap.xml
 
-# Disallow private paths
-Disallow: /api/
-Disallow: /private/
-
 # Google
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0
+
+# Google Image
+User-agent: Googlebot-Image
+Allow: /
 
 # Naver
 User-agent: Yeti
@@ -23,5 +24,10 @@ Crawl-delay: 1
 
 # Daum
 User-agent: Daum
+Allow: /
+Crawl-delay: 1
+
+# Bing
+User-agent: Bingbot
 Allow: /
 Crawl-delay: 1

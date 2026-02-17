@@ -17,7 +17,7 @@ export default function Contact() {
             <div className="container mx-auto px-6 relative z-10">
                 <div className="grid md:grid-cols-2 gap-12 lg:gap-24">
                     <div className="space-y-8">
-                        <h2 className="text-3xl font-bold text-white">픽업 및 예약 안내</h2>
+                        <h2 className="text-3xl font-bold text-white">달토 픽업 및 예약 안내</h2>
 
                         <div className="bg-white/5 rounded-2xl p-8 border border-white/5 backdrop-blur-sm">
                             <div className="flex items-center gap-4 mb-6">
@@ -53,7 +53,7 @@ export default function Contact() {
 
                     <div className="flex flex-col justify-center">
                         <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">
-                            편하게 <span className="text-transparent bg-clip-text bg-gradient-to-r from-aurora-cyan to-aurora-pink">문의주세요</span>
+                            강남 달토에 편하게 <span className="text-transparent bg-clip-text bg-gradient-to-r from-aurora-cyan to-aurora-pink">문의주세요</span>
                         </h2>
                         <p className="text-gray-400 text-lg mb-10 leading-relaxed">
                             화려한 말로 포장하지 않습니다.<br />

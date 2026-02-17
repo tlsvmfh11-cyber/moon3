@@ -22,7 +22,7 @@ export default function Gallery() {
             <div className="container mx-auto px-6 relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-aurora-cyan to-aurora-purple">공간</span> 미리보기
+                        강남 달토 <span className="text-transparent bg-clip-text bg-gradient-to-r from-aurora-cyan to-aurora-purple">공간</span> 미리보기
                     </h2>
                     <p className="text-xl text-gray-400">
                         달리는토끼의 실제 공간입니다

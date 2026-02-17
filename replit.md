@@ -43,6 +43,20 @@ A single-page landing website for "강남 달토" (Gangnam Dalto / Running Rabbi
 - `.glow-text` - Purple glow text shadow
 
 ## Recent Changes
+- 2026-02-17: Top 1% SEO audit & optimization
+  - Added geo meta tags (geo.region KR-11, geo.placename, ICBM coordinates) for local SEO
+  - Added hreflang ko + x-default for language targeting
+  - Structured data: Added Organization publisher with logo to WebSite, SearchAction, image/logo to LocalBusiness
+  - All section h2 headings now include "강남 달토" or "달토" target keywords
+  - Navbar: Added aria-label for accessibility
+  - Vercel: Added HSTS, X-DNS-Prefetch-Control, Permissions-Policy headers, immutable cache for hashed assets
+  - Robots.txt: Added Googlebot-Image and Bingbot rules, cleaned up Crawl-delay
+  - Full sync between index.html and seo-prerender.ts meta/schema/headings
+- 2026-02-17: Crawl report issues resolved
+  - Removed 8 non-canonical hash fragment URLs from sitemap (single canonical URL only)
+  - Added og:image with dimensions/alt, synced title/og:title/twitter:title
+  - Simplified BreadcrumbList to canonical homepage only
+  - Added www→non-www redirect in vercel.json
 - 2026-02-13: Comprehensive SEO optimization
   - Added server-side crawler prerendering (bot detection + full HTML response)
   - Added FAQ section with 8 keyword-rich Q&As
