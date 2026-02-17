@@ -59,13 +59,18 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="${canonicalUrl}"/>
-<meta property="og:title" content="강남 달토 | 달리는토끼 - 강남 하이퍼블릭 최저가 솔직 안내"/>
-<meta property="og:description" content="강남 달토는 가격·주대·이용 시스템을 숨기지 않고 안내하는 하이퍼블릭 가라오케입니다. 전화 010-2303-3778"/>
+<meta property="og:title" content="강남 달토 | 달리는토끼 - 강남 하이퍼블릭 가라오케 최저가 가격·주대·시스템 솔직 안내"/>
+<meta property="og:description" content="강남 달토(달리는토끼)는 강남역 하이퍼블릭 가라오케입니다. 주대 가격, 이용 시스템, 초이스 방식을 숨기지 않고 투명하게 안내합니다. 처음 방문하시는 분도 부담 없이 이용 가능합니다. 전화 010-2303-3778"/>
+<meta property="og:image" content="${canonicalUrl}og-image.png"/>
+<meta property="og:image:width" content="1024"/>
+<meta property="og:image:height" content="1024"/>
+<meta property="og:image:alt" content="강남 달토 달리는토끼 하이퍼블릭 가라오케"/>
 <meta property="og:locale" content="ko_KR"/>
 <meta property="og:site_name" content="강남 달토 달리는토끼"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="강남 달토 | 달리는토끼 - 강남 하이퍼블릭 최저가 솔직 안내"/>
-<meta name="twitter:description" content="강남 달토는 가격·주대·이용 시스템을 숨기지 않고 안내합니다. 전화 010-2303-3778"/>
+<meta name="twitter:title" content="강남 달토 | 달리는토끼 - 강남 하이퍼블릭 가라오케 최저가 가격·주대·시스템 솔직 안내"/>
+<meta name="twitter:description" content="강남 달토(달리는토끼)는 강남역 하이퍼블릭 가라오케입니다. 주대 가격, 이용 시스템, 초이스 방식을 숨기지 않고 투명하게 안내합니다. 전화 010-2303-3778"/>
+<meta name="twitter:image" content="${canonicalUrl}og-image.png"/>
 <meta name="google-site-verification" content="l-1hi4tffb45Lhh62DvkJCSavzJNYHTasGTeLmQF7Ms"/>
 <meta name="naver-site-verification" content="8cec9b156e74ecd10367f18d14145d785f35a5ff"/>
 
@@ -195,15 +200,7 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "홈", "item": "${canonicalUrl}"},
-        {"@type": "ListItem", "position": 2, "name": "소개", "item": "${canonicalUrl}#intro"},
-        {"@type": "ListItem", "position": 3, "name": "이용 시스템", "item": "${canonicalUrl}#system"},
-        {"@type": "ListItem", "position": 4, "name": "가격 안내", "item": "${canonicalUrl}#pricing"},
-        {"@type": "ListItem", "position": 5, "name": "갤러리", "item": "${canonicalUrl}#gallery"},
-        {"@type": "ListItem", "position": 6, "name": "이용 후기", "item": "${canonicalUrl}#reviews"},
-        {"@type": "ListItem", "position": 7, "name": "자주 묻는 질문", "item": "${canonicalUrl}#faq"},
-        {"@type": "ListItem", "position": 8, "name": "오시는 길", "item": "${canonicalUrl}#location"},
-        {"@type": "ListItem", "position": 9, "name": "예약 문의", "item": "${canonicalUrl}#contact"}
+        {"@type": "ListItem", "position": 1, "name": "강남 달토 홈", "item": "${canonicalUrl}"}
       ]
     },
     {
