@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -13,6 +13,30 @@ export default function Navbar() {
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+        return () => { document.body.style.overflow = ''; };
+    }, [isOpen]);
+
+    const handleNavClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+        e.preventDefault();
+        setIsOpen(false);
+
+        const targetId = href.replace('#', '');
+        const target = document.getElementById(targetId);
+        if (target) {
+            setTimeout(() => {
+                const navHeight = 80;
+                const top = target.getBoundingClientRect().top + window.scrollY - navHeight;
+                window.scrollTo({ top, behavior: 'smooth' });
+            }, 100);
+        }
     }, []);
 
     const navLinks = [
@@ -44,6 +68,7 @@ export default function Navbar() {
                         <a
                             key={link.name}
                             href={link.href}
+                            onClick={(e) => handleNavClick(e, link.href)}
                             className="text-gray-400 hover:text-white transition-colors text-sm font-medium tracking-wide"
                             data-testid={`link-nav-${link.name}`}
                         >
@@ -74,20 +99,27 @@ export default function Navbar() {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden bg-midnight-950 border-b border-white/5 overflow-hidden"
+                        className="md:hidden bg-midnight-950/95 backdrop-blur-lg border-b border-white/5 overflow-hidden"
                     >
                         <div className="flex flex-col p-6 gap-4">
                             {navLinks.map((link) => (
                                 <a
                                     key={link.name}
                                     href={link.href}
-                                    className="text-lg text-gray-300 hover:text-white"
-                                    onClick={() => setIsOpen(false)}
+                                    className="text-lg text-gray-300 hover:text-white py-2"
+                                    onClick={(e) => handleNavClick(e, link.href)}
                                     data-testid={`link-mobile-nav-${link.name}`}
                                 >
                                     {link.name}
                                 </a>
                             ))}
+                            <a
+                                href="tel:01023033778"
+                                className="mt-2 text-center px-5 py-3 rounded-full bg-aurora-cyan/20 border border-aurora-cyan/30 text-aurora-cyan font-medium"
+                                data-testid="link-mobile-phone"
+                            >
+                                010-2303-3778
+                            </a>
                         </div>
                     </motion.div>
                 )}
