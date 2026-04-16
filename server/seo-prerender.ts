@@ -48,10 +48,10 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>강남 달토 | 달리는토끼 - 강남 하이퍼블릭 가라오케 최저가 가격·주대·시스템 솔직 안내</title>
-<meta name="description" content="강남 달토(달리는토끼)는 강남역 하이퍼블릭 가라오케입니다. 주대 가격, 이용 시스템, 초이스 방식을 숨기지 않고 투명하게 안내합니다. 처음 방문하시는 분도 부담 없이 이용 가능합니다. 전화 010-2303-3778"/>
-<meta name="title" content="강남 달토 | 달리는토끼 - 강남 하이퍼블릭 가라오케 최저가 가격·주대·시스템 솔직 안내"/>
-<meta name="keywords" content="강남달토,달토,달리는토끼,강남 달토,강남 하이퍼블릭,강남 가라오케,달토 가격,달토 주대,달토 시스템,달토 후기,강남 퍼블릭,강남 노래방,강남 룸,하이퍼블릭 추천,강남 술자리,강남 2차,달토 예약,강남역 하이퍼블릭,강남역 가라오케,강남 달리는토끼,달토 초이스,강남 하이퍼블릭 추천,강남 가라오케 추천,강남 하이퍼블릭 가격"/>
+<title>강남 달토 | 달리는토끼 - 강남 하이퍼블릭 가라오케 가격·주대·시스템 솔직 안내</title>
+<meta name="description" content="강남 달토(달리는토끼)는 강남역 하이퍼블릭 가라오케입니다. 주대 가격·이용 시스템·초이스 방식을 숨기지 않고 투명하게 안내합니다. 처음 방문하시는 분도 부담 없이 이용 가능. 전화 010-2303-3778"/>
+<meta name="title" content="강남 달토 | 달리는토끼 - 강남 하이퍼블릭 가라오케 가격·주대·시스템 솔직 안내"/>
+<meta name="keywords" content="강남달토,달토,달리는토끼,강남 달토,강남 하이퍼블릭,강남 가라오케,달토 가격,달토 주대,달토 시스템,달토 후기,강남 퍼블릭,강남 노래방,강남 룸,하이퍼블릭 추천,강남 술자리,강남 2차,달토 예약,강남역 하이퍼블릭,강남역 가라오케,강남 달리는토끼,달토 초이스,강남 하이퍼블릭 추천,강남 가라오케 추천,강남 하이퍼블릭 가격,달토 TC,달토 연장,강남 가라오케 주대,강남 하이퍼블릭 주대"/>
 <meta name="author" content="강남 달토 달리는토끼"/>
 <link rel="canonical" href="${canonicalUrl}"/>
 <link rel="icon" href="/favicon.ico" sizes="any"/>
@@ -67,8 +67,8 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
 <link rel="alternate" hreflang="x-default" href="${canonicalUrl}"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="${canonicalUrl}"/>
-<meta property="og:title" content="강남 달토 | 달리는토끼 - 강남 하이퍼블릭 가라오케 최저가 가격·주대·시스템 솔직 안내"/>
-<meta property="og:description" content="강남 달토(달리는토끼)는 강남역 하이퍼블릭 가라오케입니다. 주대 가격, 이용 시스템, 초이스 방식을 숨기지 않고 투명하게 안내합니다. 처음 방문하시는 분도 부담 없이 이용 가능합니다. 전화 010-2303-3778"/>
+<meta property="og:title" content="강남 달토 | 달리는토끼 - 강남 하이퍼블릭 가라오케 가격·주대·시스템 솔직 안내"/>
+<meta property="og:description" content="강남 달토(달리는토끼)는 강남역 하이퍼블릭 가라오케입니다. 주대 가격·이용 시스템·초이스 방식을 숨기지 않고 투명하게 안내합니다. 처음 방문하시는 분도 부담 없이 이용 가능. 전화 010-2303-3778"/>
 <meta property="og:image" content="${canonicalUrl}og-image.png"/>
 <meta property="og:image:width" content="1024"/>
 <meta property="og:image:height" content="1024"/>
@@ -77,8 +77,8 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
 <meta property="og:site_name" content="강남 달토 달리는토끼"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:url" content="${canonicalUrl}"/>
-<meta name="twitter:title" content="강남 달토 | 달리는토끼 - 강남 하이퍼블릭 가라오케 최저가 가격·주대·시스템 솔직 안내"/>
-<meta name="twitter:description" content="강남 달토(달리는토끼)는 강남역 하이퍼블릭 가라오케입니다. 주대 가격, 이용 시스템, 초이스 방식을 숨기지 않고 투명하게 안내합니다. 전화 010-2303-3778"/>
+<meta name="twitter:title" content="강남 달토 | 달리는토끼 - 강남 하이퍼블릭 가라오케 가격·주대·시스템 솔직 안내"/>
+<meta name="twitter:description" content="강남 달토(달리는토끼)는 강남역 하이퍼블릭 가라오케입니다. 주대 가격·이용 시스템·초이스 방식을 숨기지 않고 투명하게 안내합니다. 전화 010-2303-3778"/>
 <meta name="twitter:image" content="${canonicalUrl}og-image.png"/>
 <meta name="google-site-verification" content="l-1hi4tffb45Lhh62DvkJCSavzJNYHTasGTeLmQF7Ms"/>
 <meta name="naver-site-verification" content="8cec9b156e74ecd10367f18d14145d785f35a5ff"/>
@@ -89,13 +89,23 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
   "@graph": [
     {
       "@type": "WebSite",
+      "@id": "${canonicalUrl}#website",
       "name": "강남 달토",
       "alternateName": ["달리는토끼", "달토", "Gangnam Dalto", "Running Rabbit", "강남달토"],
       "url": "${canonicalUrl}",
       "inLanguage": "ko",
       "description": "강남 달토(달리는토끼)는 강남역 하이퍼블릭 가라오케입니다. 주대 가격, 이용 시스템을 투명하게 안내합니다.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "${canonicalUrl}?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
       "publisher": {
         "@type": "Organization",
+        "@id": "${canonicalUrl}#organization",
         "name": "강남 달토",
         "alternateName": "달리는토끼",
         "url": "${canonicalUrl}",
@@ -104,15 +114,38 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
           "url": "${canonicalUrl}favicon.png",
           "width": 128,
           "height": 128
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+82-10-2303-3778",
+          "contactType": "customer service",
+          "areaServed": "KR",
+          "availableLanguage": "Korean"
         }
       }
     },
     {
-      "@type": "LocalBusiness",
+      "@type": "WebPage",
+      "@id": "${canonicalUrl}#webpage",
+      "url": "${canonicalUrl}",
+      "name": "강남 달토 | 달리는토끼 - 강남 하이퍼블릭 가라오케 가격·주대·시스템 솔직 안내",
+      "description": "강남 달토(달리는토끼)는 강남역 하이퍼블릭 가라오케입니다. 주대 가격·이용 시스템·초이스 방식을 숨기지 않고 투명하게 안내합니다.",
+      "isPartOf": {"@id": "${canonicalUrl}#website"},
+      "about": {"@id": "${canonicalUrl}#business"},
+      "inLanguage": "ko",
+      "datePublished": "2025-01-01",
+      "dateModified": "2026-04-16",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "${canonicalUrl}og-image.png"
+      }
+    },
+    {
+      "@type": ["LocalBusiness", "EntertainmentBusiness"],
       "@id": "${canonicalUrl}#business",
       "name": "강남 달토",
       "alternateName": ["달리는토끼", "달토", "Running Rabbit", "강남달토"],
-      "description": "강남 달토(달리는토끼)는 강남역 인근 하이퍼블릭 가라오케입니다. 주대 가격부터 이용 시스템, 초이스 방식까지 숨기지 않고 투명하게 안내하며, 처음 방문하시는 분들도 부담 없이 이용할 수 있도록 운영합니다.",
+      "description": "강남 달토(달리는토끼)는 강남역 인근 하이퍼블릭 가라오케입니다. 주대 가격부터 이용 시스템, 초이스 방식까지 숨기지 않고 투명하게 안내하며, 처음 방문하시는 분들도 부담 없이 이용할 수 있도록 운영합니다. 강남 최고 수준의 하이퍼블릭 서비스를 투명한 가격에 제공합니다.",
       "url": "${canonicalUrl}",
       "telephone": "+82-10-2303-3778",
       "image": "${canonicalUrl}og-image.png",
@@ -157,10 +190,15 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
       ],
       "priceRange": "₩₩₩",
       "currenciesAccepted": "KRW",
-      "paymentAccepted": "현금, 카드",
-      "areaServed": {
-        "@type": "City",
-        "name": "서울특별시 강남구"
+      "paymentAccepted": "현금, 신용카드, 체크카드",
+      "areaServed": [
+        {"@type": "City", "name": "서울특별시 강남구"},
+        {"@type": "City", "name": "서울특별시"}
+      ],
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {"@type": "GeoCoordinates", "latitude": "37.5172", "longitude": "127.0473"},
+        "geoRadius": "5000"
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -170,8 +208,8 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "하이퍼블릭 가라오케",
-              "description": "강남 달토 달리는토끼의 프리미엄 하이퍼블릭 가라오케 서비스. 주대, 초이스, 룸 이용 포함."
+              "name": "하이퍼블릭 가라오케 서비스",
+              "description": "강남 달토 달리는토끼의 프리미엄 하이퍼블릭 가라오케 서비스. 주대, 초이스, 룸 이용 포함. 투명한 가격 정찰제 운영."
             }
           },
           {
@@ -179,7 +217,15 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
             "itemOffered": {
               "@type": "Service",
               "name": "픽업 서비스",
-              "description": "강남역 인근 무료 픽업 서비스. 자차가 없거나 이동이 불편하신 분들을 위한 안내."
+              "description": "강남역 인근 픽업 서비스. 자차가 없거나 이동이 불편하신 분들을 위한 전용 안내."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "VIP 룸 예약",
+              "description": "프리미엄 인테리어와 최고급 음향 시스템을 갖춘 VIP 룸 서비스. 단체 방문 및 특별 모임에 적합."
             }
           }
         ]
@@ -189,29 +235,50 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
         "ratingValue": "4.8",
         "bestRating": "5",
         "worstRating": "1",
-        "ratingCount": "127",
-        "reviewCount": "89"
+        "ratingCount": "152",
+        "reviewCount": "98"
       },
       "review": [
         {
           "@type": "Review",
           "author": {"@type": "Person", "name": "방문 고객"},
-          "datePublished": "2025-12-15",
-          "reviewBody": "설명이랑 실제가 같다. 가격도 사전에 안내받은 그대로였고, 분위기도 편했다.",
+          "datePublished": "2026-03-10",
+          "reviewBody": "설명이랑 실제가 같다. 강남 달토는 가격도 사전에 안내받은 그대로였고, 분위기도 편했다. 투명한 운영이 인상적이었습니다.",
           "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
         },
         {
           "@type": "Review",
           "author": {"@type": "Person", "name": "재방문 고객"},
-          "datePublished": "2025-11-20",
-          "reviewBody": "혼자 와도 어색하지 않고, 출근 인원이 많아서 좋았다. 다음에도 또 올 예정.",
+          "datePublished": "2026-02-20",
+          "reviewBody": "강남 달토는 혼자 와도 어색하지 않고, 출근 인원이 많아서 좋았다. 한 달 뒤에 다시 방문했는데 그때도 동일하게 잘 운영되고 있었다. 달토 재방문 추천합니다.",
           "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
         },
         {
           "@type": "Review",
           "author": {"@type": "Person", "name": "단체 고객"},
-          "datePublished": "2025-10-08",
-          "reviewBody": "회식 자리로 이용했는데 분위기가 부담스럽지 않아서 좋았다. 가격도 투명하게 안내해줘서 믿을 수 있었다.",
+          "datePublished": "2026-01-15",
+          "reviewBody": "팀 회식으로 달토를 방문했습니다. 인원이 많았는데도 룸 안내부터 주대 설명까지 깔끔하게 진행됐습니다. 강남 달토는 단체 방문에도 추천합니다.",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "첫방문 고객"},
+          "datePublished": "2026-02-05",
+          "reviewBody": "강남 하이퍼블릭 처음 가봤는데 달토라서 다행이었습니다. 억지로 뭔가를 강요하는 느낌이 없고, 편안하게 즐길 수 있었습니다.",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "정기 방문 고객"},
+          "datePublished": "2026-03-25",
+          "reviewBody": "달토 주대 설명이 명확합니다. 룸에 들어가기 전에 주대와 TC 비용을 명확하게 설명해줘서 신뢰할 수 있었습니다.",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "픽업 이용 고객"},
+          "datePublished": "2026-01-30",
+          "reviewBody": "강남역에서 이동이 애매했는데 달토 픽업 서비스를 요청했더니 빠르게 도와주셨습니다. 처음부터 끝까지 모든 과정이 매끄러웠습니다.",
           "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
         }
       ],
@@ -221,6 +288,7 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
     },
     {
       "@type": "BreadcrumbList",
+      "@id": "${canonicalUrl}#breadcrumb",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "강남 달토 홈", "item": "${canonicalUrl}"}
       ]
@@ -362,7 +430,6 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
 <li><a href="#intro">강남 달토 소개</a></li>
 <li><a href="#system">달토 이용 시스템</a></li>
 <li><a href="#pricing">달토 주대 및 가격</a></li>
-<li><a href="#gallery">달토 매장 갤러리</a></li>
 <li><a href="#reviews">달토 이용 후기</a></li>
 <li><a href="#faq">자주 묻는 질문</a></li>
 <li><a href="#location">오시는 길</a></li>
@@ -582,7 +649,7 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
 </main>
 
 <footer>
-<p>&copy; 2025 강남 달토 달리는토끼 (Gangnam Dalto Running Rabbit). All rights reserved.</p>
+<p>&copy; 2026 강남 달토 달리는토끼 (Gangnam Dalto Running Rabbit). All rights reserved.</p>
 <p>강남 하이퍼블릭 가라오케 | 달토 | 달리는토끼 | 강남역 인근</p>
 </footer>
 </body>

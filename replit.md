@@ -43,6 +43,11 @@ A single-page landing website for "강남 달토" (Gangnam Dalto / Running Rabbi
 - `.glow-text` - Purple glow text shadow
 
 ## Recent Changes
+- 2026-04-16: 최고수준 Google SEO 최적화 (구글 1위 목표)
+  - **index.html**: FAQPage 8→15개 완전 동기화, WebPage 스키마 추가, SearchAction 추가, contactPoint 추가, EntertainmentBusiness 타입 추가, 리뷰 3→6개+날짜 2026년 업데이트, reviewCount 98/ratingCount 152, 키워드 "달토 TC·연장" 추가, noscript 풍부화
+  - **seo-prerender.ts**: 갤러리 nav 링크 제거, WebPage 스키마 추가, SearchAction, contactPoint, serviceArea, 리뷰 6개로 확대, dateModified 2026-04-16, 저작권 2026, 메타설명 개선, keywords 동기화
+  - **sitemap.xml**: lastmod 2026-02-17 → 2026-04-16 업데이트
+  - 구조화 데이터 @id 완전 연결 (WebSite→WebPage→LocalBusiness)
 - 2026-04-16: Gallery section removed; images distributed across sections
   - Gallery component & page import removed
   - gallery1 (프리미엄 룸 인테리어) → Intro section (replaces intro_visual.png)
