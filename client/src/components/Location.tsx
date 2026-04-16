@@ -1,10 +1,12 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { MapPin, Train, Clock, Car, Phone } from 'lucide-react';
+import { MapPin, Train, Clock, Car, Phone, Navigation } from 'lucide-react';
 
 export default function Location() {
     const ref = useRef(null);
+    const ref2 = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
+    const isInView2 = useInView(ref2, { once: true, margin: "-100px" });
 
     const infoItems = [
         {
@@ -51,8 +53,13 @@ export default function Location() {
                     <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">
                         강남 달토 <span className="text-gray-500">오시는 길</span>
                     </h2>
-                    <p className="text-xl text-gray-400">
+                    <p className="text-xl text-gray-400 mb-3">
                         강남역 인근, 편하게 방문하실 수 있습니다
+                    </p>
+                    <p className="text-gray-500 max-w-2xl mx-auto text-base">
+                        강남 달토(달리는토끼)는 서울 강남 중심부에 위치해 있어
+                        대중교통과 자가용 모두 편리하게 이용하실 수 있습니다.
+                        정확한 위치는 방문 전 문의 시 안내드립니다.
                     </p>
                 </div>
 
@@ -75,29 +82,38 @@ export default function Location() {
                     ))}
                 </div>
 
-                <div className="max-w-3xl mx-auto">
+                <div className="max-w-3xl mx-auto mb-12">
                     <div className="glass-panel p-8 md:p-10 rounded-3xl border border-white/10">
                         <h3 className="text-2xl font-bold text-white mb-6">처음 방문하시는 분들을 위한 안내</h3>
                         <div className="space-y-6 text-gray-400 leading-relaxed">
                             <p>
                                 강남 달토(달리는토끼)는 <strong className="text-white">강남역 인근</strong>에 위치해 있어
                                 대중교통으로도 편하게 오실 수 있습니다.
+                                강남구 최중심 위치로 서울 어디서든 30분 이내 접근이 가능합니다.
                             </p>
                             <div className="grid md:grid-cols-2 gap-4">
                                 <div className="bg-white/5 p-5 rounded-xl border border-white/5">
-                                    <h4 className="text-white font-semibold mb-2">대중교통 이용 시</h4>
+                                    <h4 className="text-white font-semibold mb-3 flex items-center gap-2">
+                                        <Train className="w-4 h-4 text-aurora-cyan" />
+                                        대중교통 이용 시
+                                    </h4>
                                     <ul className="space-y-2 text-sm text-gray-400">
-                                        <li>2호선 · 신분당선 강남역 하차</li>
-                                        <li>도보 이동 가능 거리</li>
-                                        <li>버스 이용 시 강남역 정류장 하차</li>
+                                        <li>• 2호선 · 신분당선 강남역 하차</li>
+                                        <li>• 역에서 도보 이동 가능 거리</li>
+                                        <li>• 버스 이용 시 강남역 정류장 하차</li>
+                                        <li>• 지하철 막차 이후에도 픽업 가능</li>
                                     </ul>
                                 </div>
                                 <div className="bg-white/5 p-5 rounded-xl border border-white/5">
-                                    <h4 className="text-white font-semibold mb-2">자가용 이용 시</h4>
+                                    <h4 className="text-white font-semibold mb-3 flex items-center gap-2">
+                                        <Car className="w-4 h-4 text-aurora-purple" />
+                                        자가용 이용 시
+                                    </h4>
                                     <ul className="space-y-2 text-sm text-gray-400">
-                                        <li>인근 유료 주차장 이용 가능</li>
-                                        <li>대리운전 서비스 이용 가능</li>
-                                        <li>자차 없으시면 픽업 서비스 안내</li>
+                                        <li>• 인근 유료 주차장 이용 가능</li>
+                                        <li>• 대리운전 서비스 이용 가능</li>
+                                        <li>• 자차 없으시면 픽업 서비스 안내</li>
+                                        <li>• 주차 위치 문의 시 안내 가능</li>
                                     </ul>
                                 </div>
                             </div>
@@ -113,6 +129,48 @@ export default function Location() {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div ref={ref2}>
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={isInView2 ? { opacity: 1, y: 0 } : {}}
+                        transition={{ duration: 0.7 }}
+                        className="max-w-3xl mx-auto"
+                    >
+                        <div className="glass-panel p-8 rounded-3xl border border-white/10">
+                            <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-3">
+                                <Navigation className="w-5 h-5 text-aurora-pink" />
+                                강남 달토 주변 정보
+                            </h3>
+                            <div className="grid md:grid-cols-2 gap-6 text-sm text-gray-400 leading-relaxed">
+                                <div>
+                                    <h4 className="text-white font-semibold mb-3">주변 랜드마크</h4>
+                                    <ul className="space-y-2">
+                                        <li>• 강남역 (도보 이동 가능)</li>
+                                        <li>• 신논현역 인근</li>
+                                        <li>• 강남구청 방면</li>
+                                        <li>• 강남대로 메인 스트리트</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="text-white font-semibold mb-3">영업시간 상세</h4>
+                                    <ul className="space-y-2">
+                                        <li>• 월~목: 18:00 ~ 05:00</li>
+                                        <li>• 금·토: 18:00 ~ 06:00</li>
+                                        <li>• 일요일: 18:00 ~ 04:00</li>
+                                        <li>• 연중무휴 (명절·공휴일 포함)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="mt-6 pt-6 border-t border-white/10">
+                                <p className="text-gray-500 text-sm">
+                                    강남 달토는 강남 하이퍼블릭 가라오케 특성상 정확한 주소를 공개하지 않으며,
+                                    방문 전 사전 문의를 통해 안내드립니다. 문의 시 위치 및 오시는 방법을 친절하게 알려드립니다.
+                                </p>
+                            </div>
+                        </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

@@ -1,11 +1,13 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { HelpCircle, Search, AlertCircle } from 'lucide-react';
+import { HelpCircle, Search, AlertCircle, ShieldCheck, Users, BadgeCheck } from 'lucide-react';
 import introVisual from '@/assets/intro_visual.png';
 
 export default function Intro() {
     const ref = useRef(null);
+    const ref2 = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
+    const isInView2 = useInView(ref2, { once: true, margin: "-100px" });
 
     return (
         <section id="intro" className="py-24 bg-midnight-950 relative overflow-hidden">
@@ -23,7 +25,7 @@ export default function Intro() {
 
                         <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
                             <p>
-                                강남에서 가라오케나 하이퍼블릭을 찾는 분들 대부분이<br />
+                                강남에서 하이퍼블릭 가라오케나 달토를 찾는 분들 대부분이<br />
                                 처음부터 이런 생각을 합니다.
                             </p>
                             <ul className="space-y-4 my-8">
@@ -41,13 +43,19 @@ export default function Intro() {
                                 </li>
                             </ul>
                             <p>
-                                <strong className="text-white">강남 달토 (달리는토끼)</strong>는 이런 걱정을 줄이기 위해<br />
+                                <strong className="text-white">강남 달토 (달리는토끼)</strong>는 이런 걱정을 줄이기 위해
                                 운영 방식부터 다르게 가져가고 있습니다.
                             </p>
                             <p>
-                                "무조건 좋다", "무조건 싸다" 같은 말 안 합니다.<br />
-                                대신 <strong className="text-white">지금 상황이 어떤지, 얼마 정도 생각하셔야 하는지</strong>,<br />
+                                "무조건 좋다", "무조건 싸다" 같은 말 안 합니다.
+                                대신 <strong className="text-white">지금 상황이 어떤지, 얼마 정도 생각하셔야 하는지</strong>,
                                 그리고 <strong className="text-white">이용해도 괜찮을지 아닐지</strong>를 먼저 말씀드립니다.
+                            </p>
+                            <p className="text-gray-500 text-base">
+                                강남 하이퍼블릭 가라오케 시장에는 수많은 업체가 있습니다.
+                                그 중에서 <strong className="text-gray-300">강남 달토(달리는토끼)</strong>가 반복 고객 비율이 높은 이유는
+                                단 하나입니다 — 처음부터 솔직하게 말하기 때문입니다.
+                                한 번 실망시키는 것보다 한 번 제대로 안내하는 것이 더 낫다고 생각합니다.
                             </p>
                         </div>
                     </motion.div>
@@ -67,8 +75,10 @@ export default function Intro() {
                         <div className="glass-panel p-8 md:p-12 rounded-3xl relative">
                             <h3 className="text-2xl font-bold mb-6 text-white">처음 연락 주시는 분들께</h3>
                             <p className="text-gray-400 mb-6 leading-relaxed">
-                                강남 달토를 처음 문의하시는 분들 중 절반 이상은<br />
+                                강남 달토를 처음 문의하시는 분들 중 절반 이상은
                                 이미 다른 곳에서 불편한 경험을 해보신 분들입니다.
+                                강남 가라오케, 강남 하이퍼블릭을 찾다가
+                                정보가 부족해 실망하신 분들이 많습니다.
                             </p>
                             <div className="space-y-4">
                                 <div className="flex items-start gap-3">
@@ -92,6 +102,62 @@ export default function Intro() {
                             </div>
                         </div>
                     </motion.div>
+                </div>
+
+                <div ref={ref2} className="mt-24">
+                    <motion.div
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={isInView2 ? { opacity: 1, y: 0 } : {}}
+                        transition={{ duration: 0.8 }}
+                        className="text-center mb-12"
+                    >
+                        <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                            강남 달토(달리는토끼)가 <span className="text-gradient-aurora">다른 이유</span>
+                        </h3>
+                        <p className="text-gray-400 max-w-2xl mx-auto">
+                            강남 하이퍼블릭 가라오케 중에서 달토가 꾸준히 선택받는 세 가지 핵심 이유입니다.
+                        </p>
+                    </motion.div>
+
+                    <div className="grid md:grid-cols-3 gap-6">
+                        {[
+                            {
+                                icon: ShieldCheck,
+                                color: "text-aurora-cyan",
+                                bg: "bg-aurora-cyan/10 border-aurora-cyan/20",
+                                title: "투명한 가격 공개",
+                                body: "강남 달토는 방문 전에 주대·TC 구조를 명확히 안내합니다. 현장에서 갑자기 가격이 달라지거나 설명 없이 추가 비용이 붙는 구조가 아닙니다. 사전에 안내한 금액이 곧 최종 금액입니다.",
+                            },
+                            {
+                                icon: Users,
+                                color: "text-aurora-purple",
+                                bg: "bg-aurora-purple/10 border-aurora-purple/20",
+                                title: "많은 출근 인원",
+                                body: "강남 달토는 출근 인원이 많아 초이스의 선택 폭이 넓습니다. 취향에 맞게 추천드리는 방식으로 진행되며, 억지로 강요하거나 불편한 상황을 만들지 않습니다. 손님의 만족을 최우선으로 합니다.",
+                            },
+                            {
+                                icon: BadgeCheck,
+                                color: "text-aurora-gold",
+                                bg: "bg-aurora-gold/10 border-aurora-gold/20",
+                                title: "높은 재방문율",
+                                body: "강남 달토의 재방문 고객 비율은 업계 평균보다 높습니다. 한 번 방문하셨다가 다음에도 달토를 찾는 분들이 많은 이유는 간단합니다 — 처음 설명한 대로 실제도 동일하기 때문입니다.",
+                            },
+                        ].map((item, idx) => (
+                            <motion.div
+                                key={idx}
+                                initial={{ opacity: 0, y: 30 }}
+                                animate={isInView2 ? { opacity: 1, y: 0 } : {}}
+                                transition={{ duration: 0.6, delay: idx * 0.15 }}
+                                className={`glass-panel p-8 rounded-2xl border ${item.bg}`}
+                            >
+                                <div className="mb-5">
+                                    <item.icon className={`w-8 h-8 ${item.color}`} />
+                                </div>
+                                <h4 className={`text-xl font-bold mb-3 ${item.color}`}>{item.title}</h4>
+                                <p className="text-gray-400 leading-relaxed text-sm">{item.body}</p>
+                            </motion.div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

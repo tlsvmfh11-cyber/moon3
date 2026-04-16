@@ -43,6 +43,14 @@ A single-page landing website for "강남 달토" (Gangnam Dalto / Running Rabbi
 - `.glow-text` - Purple glow text shadow
 
 ## Recent Changes
+- 2026-04-16: Massive content expansion for 2026-level SEO (#1 ranking push)
+  - **Intro**: Added "강남 달토가 다른 이유" 3-card section (투명한 가격, 많은 출근인원, 높은 재방문율); expanded all body copy with E-E-A-T signals; added competitor differentiation paragraph
+  - **System**: Expanded each step with full detail paragraph; added "이용 전 꼭 알아두세요" 6-item info panel below steps
+  - **Pricing**: Added 3 pricing FAQ cards (주대/TC/카드); expanded checklist from 4→6 items; added "달토 가격 안내 원칙" 5-bullet panel; added "요금 체계 이해하기" 3-card section (주대/TC/연장)
+  - **Reviews**: Expanded from 4→8 reviews each with tag badge, longer detail text; added stats panel (재방문율, 투명가격 100%, 연중무휴, 다수 출근인원)
+  - **FAQ**: Expanded from 8→15 questions covering all major search intents (TC 비용, 카드 결제, 단체 방문, 노래방 차이, 처음 방문 준비, 연장 강요)
+  - **Location**: Added "주변 정보" panel with landmark list and detailed hours table; added note about address disclosure policy
+  - **seo-prerender.ts**: Synced all 15 FAQPage schema entries; expanded Intro/System/Pricing/Reviews body HTML; added 8 review blockquotes with structured context
 - 2026-02-17: Top 1% SEO audit & optimization
   - Added geo meta tags (geo.region KR-11, geo.placename, ICBM coordinates) for local SEO
   - Added hreflang ko + x-default for language targeting
