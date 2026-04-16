@@ -453,17 +453,6 @@ export function seoPrerender(req: Request, res: Response, next: NextFunction) {
 <a href="tel:01023033778">지금 바로 전화로 가격 확인하기 - 010-2303-3778</a>
 </article>
 
-<article id="gallery">
-<h2>강남 달토 달리는토끼 매장 공간 미리보기</h2>
-<p>달리는토끼(달토)의 실제 매장 공간입니다. 프리미엄 인테리어와 편안한 분위기를 갖춘 강남 하이퍼블릭 가라오케입니다.</p>
-<figure><img src="${canonicalUrl}og-image.png" alt="강남 달토 달리는토끼 프리미엄 룸 인테리어" width="800" height="600" loading="lazy"/><figcaption>강남 달토 달리는토끼 매장 내부 프리미엄 룸 인테리어</figcaption></figure>
-<figure><img src="${canonicalUrl}og-image.png" alt="강남 달토 하이퍼블릭 VIP 룸 시설" width="800" height="600" loading="lazy"/><figcaption>강남 달토 하이퍼블릭 가라오케 VIP룸</figcaption></figure>
-<figure><img src="${canonicalUrl}og-image.png" alt="달토 달리는토끼 가라오케 프라이빗 공간" width="800" height="600" loading="lazy"/><figcaption>달토 달리는토끼 프리미엄 노래방 시설</figcaption></figure>
-<figure><img src="${canonicalUrl}og-image.png" alt="강남 달토 럭셔리 분위기 인테리어" width="800" height="600" loading="lazy"/><figcaption>강남 달토 럭셔리 분위기 공간</figcaption></figure>
-<figure><img src="${canonicalUrl}og-image.png" alt="달리는토끼 강남 하이퍼블릭 매장 전경" width="800" height="600" loading="lazy"/><figcaption>달리는토끼 강남 매장 인테리어</figcaption></figure>
-<figure><img src="${canonicalUrl}og-image.png" alt="강남 달토 편안한 분위기 프리미엄 룸" width="800" height="600" loading="lazy"/><figcaption>강남 달토 편안한 분위기 룸</figcaption></figure>
-</article>
-
 <article id="reviews">
 <h2>강남 달토, 다시 찾는 이유 - 이용 후기</h2>
 <p>한 번 오고 끝나는 손님보다 다시 연락 주는 손님이 많습니다. 강남 달토(달리는토끼)를 이용해주신 분들의 실제 경험을 공유합니다.</p>

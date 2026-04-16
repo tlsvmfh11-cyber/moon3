@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { HelpCircle, Search, AlertCircle, ShieldCheck, Users, BadgeCheck } from 'lucide-react';
-import introVisual from '@/assets/intro_visual.png';
+import gallery1 from '@/assets/gallery/gallery1.jpg';
 
 export default function Intro() {
     const ref = useRef(null);
@@ -25,7 +25,7 @@ export default function Intro() {
 
                         <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
                             <p>
-                                강남에서 하이퍼블릭 가라오케나 달토를 찾는 분들 대부분이<br />
+                                강남에서 하이퍼블릭 가라오케나 달토를 찾는 분들 대부분이
                                 처음부터 이런 생각을 합니다.
                             </p>
                             <ul className="space-y-4 my-8">
@@ -55,7 +55,6 @@ export default function Intro() {
                                 강남 하이퍼블릭 가라오케 시장에는 수많은 업체가 있습니다.
                                 그 중에서 <strong className="text-gray-300">강남 달토(달리는토끼)</strong>가 반복 고객 비율이 높은 이유는
                                 단 하나입니다 — 처음부터 솔직하게 말하기 때문입니다.
-                                한 번 실망시키는 것보다 한 번 제대로 안내하는 것이 더 낫다고 생각합니다.
                             </p>
                         </div>
                     </motion.div>
@@ -68,11 +67,20 @@ export default function Intro() {
                     >
                         <div className="absolute inset-0 bg-gradient-to-tr from-aurora-cyan to-aurora-purple opacity-20 blur-[80px] rounded-full" />
                         <div className="relative rounded-3xl overflow-hidden border border-white/10 mb-6">
-                            <img src={introVisual} alt="강남 달토 달리는토끼 하이퍼블릭 가라오케 매장 분위기" className="w-full h-auto object-cover opacity-100" />
+                            <img
+                                src={gallery1}
+                                alt="강남 달토 달리는토끼 프리미엄 룸 인테리어"
+                                className="w-full h-[300px] object-cover"
+                            />
                             <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 to-transparent" />
+                            <div className="absolute bottom-4 left-4 right-4">
+                                <span className="inline-block px-3 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-white/10 text-xs text-gray-300">
+                                    달토 프리미엄 룸 인테리어
+                                </span>
+                            </div>
                         </div>
 
-                        <div className="glass-panel p-8 md:p-12 rounded-3xl relative">
+                        <div className="glass-panel p-8 md:p-10 rounded-3xl relative">
                             <h3 className="text-2xl font-bold mb-6 text-white">처음 연락 주시는 분들께</h3>
                             <p className="text-gray-400 mb-6 leading-relaxed">
                                 강남 달토를 처음 문의하시는 분들 중 절반 이상은

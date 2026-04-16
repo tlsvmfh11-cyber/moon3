@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Star, Quote, TrendingUp } from 'lucide-react';
+import gallery4 from '@/assets/gallery/gallery4.jpg';
 
 export default function Reviews() {
     const reviews = [
@@ -92,7 +93,32 @@ export default function Reviews() {
                     ))}
                 </div>
 
-                <div className="mt-16 max-w-4xl mx-auto">
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.7 }}
+                    className="mt-14 relative rounded-3xl overflow-hidden"
+                >
+                    <img
+                        src={gallery4}
+                        alt="강남 달토 럭셔리 분위기 인테리어"
+                        className="w-full h-[260px] md:h-[340px] object-cover"
+                        loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-l from-obsidian/90 via-obsidian/50 to-transparent" />
+                    <div className="absolute inset-0 flex items-center justify-end">
+                        <div className="px-10 md:px-16 max-w-lg text-right">
+                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">달토가 특별한 이유</h3>
+                            <p className="text-gray-300 text-base leading-relaxed">
+                                강남 달토의 럭셔리한 분위기와 세심한 서비스가 재방문을 만들어냅니다.
+                                처음 방문부터 편안하고 특별한 경험을 선사합니다.
+                            </p>
+                        </div>
+                    </div>
+                </motion.div>
+
+                <div className="mt-10 max-w-4xl mx-auto">
                     <div className="glass-panel p-8 rounded-3xl border border-white/10">
                         <div className="flex items-center gap-3 mb-6">
                             <TrendingUp className="w-6 h-6 text-aurora-gold" />

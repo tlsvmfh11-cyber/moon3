@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import gallery2 from '@/assets/gallery/gallery2.jpg';
 
 export default function System() {
     const ref = useRef(null);
@@ -88,19 +89,39 @@ export default function System() {
                     ))}
                 </div>
 
-                <div className="mt-16 text-center max-w-2xl mx-auto">
-                    <p className="text-gray-300 italic mb-8">
+                <div className="mt-12 text-center max-w-2xl mx-auto">
+                    <p className="text-gray-300 italic">
                         "달토 시스템은 억지로 끌고 가는 구조가 아니라<br className="md:hidden" /> 손님이 편한 쪽으로 맞추는 방식입니다."
                     </p>
                 </div>
 
-                <div ref={ref2} className="mt-8 max-w-4xl mx-auto">
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={isInView2 ? { opacity: 1, y: 0 } : {}}
-                        transition={{ duration: 0.7 }}
-                        className="glass-panel p-8 md:p-10 rounded-3xl border border-white/10"
-                    >
+                <motion.div
+                    ref={ref2}
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={isInView2 ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.7 }}
+                    className="mt-14 relative rounded-3xl overflow-hidden"
+                >
+                    <img
+                        src={gallery2}
+                        alt="강남 달토 하이퍼블릭 VIP 룸 시설"
+                        className="w-full h-[280px] md:h-[380px] object-cover"
+                        loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-obsidian/90 via-obsidian/50 to-transparent" />
+                    <div className="absolute inset-0 flex items-center">
+                        <div className="px-10 md:px-16 max-w-lg">
+                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">달토 VIP 룸 시설</h3>
+                            <p className="text-gray-300 text-base leading-relaxed">
+                                프리미엄 인테리어와 최고급 음향 시스템을 갖춘 강남 달토의 VIP 룸입니다.
+                                편안하고 프라이빗한 공간에서 특별한 시간을 보내세요.
+                            </p>
+                        </div>
+                    </div>
+                </motion.div>
+
+                <div className="mt-10 max-w-4xl mx-auto">
+                    <div className="glass-panel p-8 md:p-10 rounded-3xl border border-white/10">
                         <h3 className="text-xl md:text-2xl font-bold text-white mb-6">강남 달토 이용 전 꼭 알아두세요</h3>
                         <div className="grid md:grid-cols-2 gap-6 text-gray-400 text-sm leading-relaxed">
                             <div className="space-y-4">
@@ -132,7 +153,7 @@ export default function System() {
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </section>

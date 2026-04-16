@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { MapPin, Train, Clock, Car, Phone, Navigation } from 'lucide-react';
+import gallery5 from '@/assets/gallery/gallery5.jpg';
 
 export default function Location() {
     const ref = useRef(null);
@@ -63,7 +64,29 @@ export default function Location() {
                     </p>
                 </div>
 
-                <div ref={ref} className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.7 }}
+                    className="relative rounded-3xl overflow-hidden border border-white/10 mb-12"
+                >
+                    <img
+                        src={gallery5}
+                        alt="달리는토끼 강남 하이퍼블릭 매장 전경"
+                        className="w-full h-[280px] md:h-[360px] object-cover"
+                        loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-obsidian/20 to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-8">
+                        <div className="flex items-center gap-3">
+                            <MapPin className="w-5 h-5 text-aurora-pink" />
+                            <span className="text-white font-semibold">강남 달토 달리는토끼 — 서울 강남구 강남대로 인근</span>
+                        </div>
+                    </div>
+                </motion.div>
+
+                <div ref={ref} className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
                     {infoItems.map((item, idx) => (
                         <motion.div
                             key={idx}

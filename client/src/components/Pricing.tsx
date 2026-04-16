@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Check, AlertCircle } from 'lucide-react';
-import pricingCrystal from '@/assets/pricing_crystal.png';
+import gallery3 from '@/assets/gallery/gallery3.jpg';
 
 export default function Pricing() {
     const ref = useRef(null);
@@ -67,19 +67,29 @@ export default function Pricing() {
                         initial={{ opacity: 0, x: 50 }}
                         animate={isInView ? { opacity: 1, x: 0 } : {}}
                         transition={{ duration: 0.8 }}
-                        className="md:w-1/2"
+                        className="md:w-1/2 space-y-6"
                     >
+                        <div className="relative rounded-3xl overflow-hidden border border-white/10">
+                            <img
+                                src={gallery3}
+                                alt="달토 달리는토끼 가라오케 프라이빗 공간"
+                                className="w-full h-[220px] object-cover"
+                                loading="lazy"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-midnight-950/90 via-midnight-950/30 to-transparent" />
+                            <div className="absolute bottom-4 left-4">
+                                <span className="inline-block px-3 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-white/10 text-xs text-gray-300">
+                                    달토 프라이빗 공간
+                                </span>
+                            </div>
+                        </div>
+
                         <div className="glass-panel rounded-3xl p-8 md:p-10 border border-aurora-cyan/20 relative overflow-hidden group">
                             <div className="absolute inset-0 bg-gradient-to-br from-aurora-cyan/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                            <img
-                                src={pricingCrystal}
-                                alt="강남 달토 달리는토끼 투명한 가격 안내 주대 정보"
-                                className="absolute -right-20 -top-20 w-[300px] h-[300px] object-contain opacity-60 pointer-events-none mix-blend-screen"
-                            />
 
                             <h3 className="text-2xl font-bold mb-8 relative z-10 text-white">오늘의 견적 확인하기</h3>
 
-                            <ul className="space-y-6 relative z-10">
+                            <ul className="space-y-5 relative z-10">
                                 {[
                                     "요일별/시간대별 정확한 주대 안내",
                                     "인원수에 따른 1/N 견적 산출",
@@ -111,7 +121,7 @@ export default function Pricing() {
                             </div>
                         </div>
 
-                        <div className="mt-6 glass-panel p-6 rounded-2xl border border-aurora-gold/20">
+                        <div className="glass-panel p-6 rounded-2xl border border-aurora-gold/20">
                             <h4 className="text-aurora-gold font-bold mb-3 flex items-center gap-2">
                                 <AlertCircle className="w-4 h-4" />
                                 달토 가격 안내 원칙

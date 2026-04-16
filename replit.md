@@ -43,6 +43,15 @@ A single-page landing website for "강남 달토" (Gangnam Dalto / Running Rabbi
 - `.glow-text` - Purple glow text shadow
 
 ## Recent Changes
+- 2026-04-16: Gallery section removed; images distributed across sections
+  - Gallery component & page import removed
+  - gallery1 (프리미엄 룸 인테리어) → Intro section (replaces intro_visual.png)
+  - gallery2 (VIP 룸 시설) → System section (full-width atmospheric strip)
+  - gallery3 (프라이빗 공간) → Pricing section (room image in right column)
+  - gallery4 (럭셔리 분위기) → Reviews section (full-width atmospheric strip)
+  - gallery5 (매장 전경) → Location section (venue photo header)
+  - gallery6 (편안한 분위기) → Contact section (image card in left column)
+  - seo-prerender.ts: Gallery article removed; images contextually described in each section
 - 2026-04-16: Massive content expansion for 2026-level SEO (#1 ranking push)
   - **Intro**: Added "강남 달토가 다른 이유" 3-card section (투명한 가격, 많은 출근인원, 높은 재방문율); expanded all body copy with E-E-A-T signals; added competitor differentiation paragraph
   - **System**: Expanded each step with full detail paragraph; added "이용 전 꼭 알아두세요" 6-item info panel below steps

@@ -1,5 +1,6 @@
 import { Phone, MessageSquare, Car, Send } from 'lucide-react';
 import contactBg from '@/assets/contact_bg.png';
+import gallery6 from '@/assets/gallery/gallery6.jpg';
 
 export default function Contact() {
     return (
@@ -17,6 +18,21 @@ export default function Contact() {
             <div className="container mx-auto px-6 relative z-10">
                 <div className="grid md:grid-cols-2 gap-12 lg:gap-24">
                     <div className="space-y-8">
+                        <div className="relative rounded-2xl overflow-hidden border border-white/10">
+                            <img
+                                src={gallery6}
+                                alt="강남 달토 편안한 분위기 프리미엄 룸"
+                                className="w-full h-[200px] object-cover"
+                                loading="lazy"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-midnight-950/80 to-transparent" />
+                            <div className="absolute bottom-4 left-4">
+                                <span className="inline-block px-3 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-white/10 text-xs text-gray-300">
+                                    달토 편안한 분위기 룸
+                                </span>
+                            </div>
+                        </div>
+
                         <h3 className="text-3xl font-bold text-white">달토 픽업 및 예약 안내</h3>
 
                         <div className="bg-white/5 rounded-2xl p-8 border border-white/5 backdrop-blur-sm">
