@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Phone } from 'lucide-react';
 
 const faqData = [
     {
@@ -9,11 +9,15 @@ const faqData = [
     },
     {
         q: "달토 이용 시스템은 어떻게 되나요?",
-        a: "강남 달토는 5단계로 진행됩니다. ① 사전 문의(인원·시간·성격 전달) → ② 도착 시 바로 룸 안내 → ③ 주대·이용 시간 명확 설명 → ④ 초이스 진행(취향 맞춤, 강요 없음) → ⑤ 연장 여부 자유 선택. 모든 과정에서 손님의 편의를 우선으로 하며, 불필요한 압박이나 강요는 없습니다.",
+        a: "강남 달토는 5단계로 진행됩니다. ① 사전 문의(인원·시간·성격 전달) → ② 도착 시 바로 룸 안내(대기 없음) → ③ 주대·이용 시간 명확 설명 → ④ 초이스 진행(취향 맞춤, 강요 없음) → ⑤ 연장 여부 자유 선택. 모든 과정에서 손님의 편의를 우선으로 하며, 불필요한 압박이나 강요는 없습니다.",
     },
     {
         q: "강남 달토 예약은 어떻게 하나요?",
         a: "전화(010-2303-3778), 문자, 또는 텔레그램(@hscompanyshs)으로 문의하시면 됩니다. 방문 인원, 방문 시간, 대략적인 분위기/취향을 알려주시면 맞춤 안내를 드립니다. 당일 예약도 가능하며, 복잡한 온라인 예약 절차 없이 연락 한 번으로 모든 안내가 완료됩니다.",
+    },
+    {
+        q: "강남 달토 당일 예약도 가능한가요?",
+        a: "네, 강남 달토는 당일 예약도 가능합니다. 당일 방문을 원하시는 경우 전화(010-2303-3778) 또는 문자로 연락 주시면 그날 출근 상황과 가용 룸을 확인한 후 바로 안내드립니다. 다만 금요일·토요일 등 성수기에는 조금 일찍 문의해 주시는 것이 좋습니다.",
     },
     {
         q: "강남 달토 위치는 어디인가요?",
@@ -63,6 +67,22 @@ const faqData = [
         q: "연장은 어떻게 하나요? 강요가 있나요?",
         a: "강남 달토에서는 기본 이용 시간이 끝나면 연장 여부를 자유롭게 선택하실 수 있습니다. 연장을 원치 않으셔도 전혀 불편한 눈치를 주지 않으며, 손님이 결정하시면 됩니다. 연장 비용도 현장에서 명확히 안내드리므로 갑자기 추가 비용이 발생하는 일은 없습니다.",
     },
+    {
+        q: "강남 달토 주말 요금이 평일과 다른가요?",
+        a: "네, 강남 달토는 주말(금·토)과 평일 요금이 다소 차이가 있습니다. 주말은 수요가 높아 평일 대비 요금이 높게 책정될 수 있으며, 심야 시간대는 추가 안내가 있습니다. 방문 전 전화(010-2303-3778)로 문의하시면 그날 기준으로 정확하게 안내드립니다.",
+    },
+    {
+        q: "강남 달토와 강남 퍼블릭의 차이가 무엇인가요?",
+        a: "강남 달토(달리는토끼)는 '하이퍼블릭' 형태로, 일반 퍼블릭보다 한 단계 높은 프리미엄 서비스를 제공합니다. 룸 인테리어, 음향 시스템, 초이스 인원 구성 등이 일반 퍼블릭과 다르며, 서비스 퀄리티와 분위기 면에서 차이가 있습니다. 정확한 차이는 문의 시 상세히 설명드립니다.",
+    },
+    {
+        q: "달토 방문 시 신분증이 필요한가요?",
+        a: "강남 달토는 성인만 이용 가능한 업장입니다. 신분증을 지참하시면 보다 원활하게 입장하실 수 있습니다. 미성년자는 이용이 불가하며, 연령 확인이 필요할 경우 신분증 제시를 요청드릴 수 있습니다.",
+    },
+    {
+        q: "강남 달토 2026년 현재 정상 운영 중인가요?",
+        a: "네, 강남 달토(달리는토끼)는 2026년 현재도 강남역 인근에서 정상 운영 중입니다. 연중무휴로 매일 저녁 6시부터 운영하며, 최신 출근 상황과 가격 정보는 전화(010-2303-3778) 또는 텔레그램(@hscompanyshs)으로 실시간 확인하실 수 있습니다.",
+    },
 ];
 
 export default function FAQ() {
@@ -81,7 +101,7 @@ export default function FAQ() {
                     </p>
                     <p className="text-gray-500 max-w-2xl mx-auto text-base">
                         강남 하이퍼블릭 가라오케를 처음 이용하시는 분들이 가장 많이 물어보시는
-                        질문들을 정리했습니다. 아래에서 원하시는 답변을 찾으시거나,
+                        질문 20가지를 정리했습니다. 아래에서 원하시는 답변을 찾으시거나,
                         직접 전화 문의 주시면 더욱 자세히 안내드립니다.
                     </p>
                 </div>
@@ -97,7 +117,7 @@ export default function FAQ() {
                                 className="w-full flex items-center justify-between gap-4 p-6 text-left"
                                 data-testid={`button-faq-${idx}`}
                             >
-                                <h3 className="text-lg font-semibold text-white pr-4">{item.q}</h3>
+                                <h3 className="text-base md:text-lg font-semibold text-white pr-4">{item.q}</h3>
                                 <ChevronDown
                                     className={`w-5 h-5 text-aurora-cyan flex-shrink-0 transition-transform duration-300 ${openIndex === idx ? 'rotate-180' : ''}`}
                                 />
@@ -121,15 +141,21 @@ export default function FAQ() {
                     ))}
                 </div>
 
-                <div className="mt-12 text-center">
-                    <p className="text-gray-500 mb-4">더 궁금하신 점이 있으시면 편하게 문의해주세요</p>
-                    <a
-                        href="tel:01023033778"
-                        className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-aurora-cyan to-aurora-purple text-midnight-950 font-bold rounded-full hover:shadow-[0_0_20px_rgba(45,212,191,0.4)] transition-all"
-                        data-testid="link-faq-call"
-                    >
-                        전화로 문의하기 010-2303-3778
-                    </a>
+                <div className="mt-12 max-w-3xl mx-auto">
+                    <div className="glass-panel p-6 rounded-2xl border border-aurora-cyan/20 flex flex-col md:flex-row items-center gap-6">
+                        <div className="flex-1">
+                            <p className="text-white font-semibold mb-1">더 궁금하신 점이 있으신가요?</p>
+                            <p className="text-gray-400 text-sm">위에서 찾지 못한 질문은 전화로 바로 확인하세요. 그날 기준으로 솔직하게 답변드립니다.</p>
+                        </div>
+                        <a
+                            href="tel:01023033778"
+                            className="flex-shrink-0 flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-aurora-cyan to-aurora-purple text-midnight-950 font-bold rounded-full hover:shadow-[0_0_20px_rgba(45,212,191,0.4)] transition-all"
+                            data-testid="link-faq-call"
+                        >
+                            <Phone className="w-4 h-4" />
+                            010-2303-3778
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

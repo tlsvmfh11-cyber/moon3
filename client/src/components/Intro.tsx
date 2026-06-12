@@ -112,7 +112,32 @@ export default function Intro() {
                     </motion.div>
                 </div>
 
-                <div ref={ref2} className="mt-24">
+                <div className="mt-16 max-w-3xl mx-auto">
+                    <div className="glass-panel p-7 rounded-2xl border border-aurora-gold/20 bg-aurora-gold/5">
+                        <div className="flex items-center gap-3 mb-4">
+                            <span className="inline-block px-3 py-1 rounded-full bg-aurora-gold/20 border border-aurora-gold/30 text-aurora-gold text-xs font-bold tracking-widest uppercase">2026년 최신</span>
+                            <h3 className="text-white font-bold text-lg">강남 달토 2026년 현재 운영 현황</h3>
+                        </div>
+                        <div className="grid md:grid-cols-3 gap-4 text-sm">
+                            {[
+                                { label: "운영 상태", value: "정상 운영 중", sub: "연중무휴, 매일 18:00~" },
+                                { label: "출근 인원", value: "정기 출근", sub: "다양한 구성원 상시 대기" },
+                                { label: "예약 방식", value: "전화·문자·텔레그램", sub: "당일 예약 가능" },
+                            ].map((item, idx) => (
+                                <div key={idx} className="bg-white/5 rounded-xl p-4 border border-white/5">
+                                    <p className="text-gray-500 text-xs mb-1">{item.label}</p>
+                                    <p className="text-aurora-gold font-bold mb-0.5">{item.value}</p>
+                                    <p className="text-gray-400 text-xs">{item.sub}</p>
+                                </div>
+                            ))}
+                        </div>
+                        <p className="text-gray-500 text-xs mt-4">
+                            * 2026년 4월 기준 정보입니다. 최신 출근 상황은 전화(010-2303-3778)로 확인하세요.
+                        </p>
+                    </div>
+                </div>
+
+                <div ref={ref2} className="mt-16">
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         animate={isInView2 ? { opacity: 1, y: 0 } : {}}
